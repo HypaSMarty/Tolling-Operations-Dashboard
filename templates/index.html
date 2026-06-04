@@ -394,18 +394,18 @@ iframe{
                     {{ station.status }}
                 </span>
 
-                {% elif station.status == 'Resolved' %}
-                <span class="status resolved">
+                {% elif station.status == 'Draft Submitted to RTO-O' %}
+                <span class="status RTO-O">
                     {{ station.status }}
                 </span>
 
-                {% elif station.status == "Submitted to CEO's Office" %}
-                <span class="status ceo">
+                {% elif station.status == "Draft in Circulation" %}
+                <span class="status Circulation">
                     {{ station.status }}
                 </span>
 
                 {% else %}
-                <span class="status registry">
+                <span class="status Registry">
                     {{ station.status }}
                 </span>
 
